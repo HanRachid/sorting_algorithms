@@ -79,7 +79,11 @@ int partition(int beg, int pivot, int *i, size_t size)
 	}
 	return (beg);
 }
-
+/**
+ * swap_int - swaps the values of two integers
+ * @a: first int
+ * @b: second int
+ */
 void swap_int(int *a, int *b)
 {
 	int temp;
