@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include "sort.h"
 
-void divide(int beg, int pivot, int *i, size_t size);
 int partition(int beg, int pivot, int *i, size_t size);
-void swap_int(int *a, int *b);
 /**
  * quick_sort - sorts an array of integers in ascending order
  * @array: array to be sorted
@@ -80,4 +78,13 @@ int partition(int beg, int pivot, int *i, size_t size)
 		beg++;
 	}
 	return (beg);
+}
+
+void swap_int(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
